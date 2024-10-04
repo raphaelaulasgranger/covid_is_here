@@ -1,0 +1,7 @@
+streamlit
+pandas
+folium
+branca
+plotly
+datetime
+streamlit_folium
