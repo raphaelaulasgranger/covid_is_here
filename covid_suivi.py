@@ -30,7 +30,7 @@ def load_geo(path):
     # Chargement des données
 
     geo = pd.read_csv (path + 
-                       sumeau-stations-2024-09-25-18h00.csv', 
+                       'sumeau-stations-2024-09-25-18h00.csv', 
                       sep = ';' 
                       )
     # st.write(geo)
@@ -180,9 +180,9 @@ def visualize_data(df_final):
 
 def main():
     st.title("Mon application de données")
-    
-    df = load_df()
-    geo= load_geo ()
+    path = './'
+    df = load_df(path)
+    geo= load_geo (path)
     
     df_final , geo_final = preprocess_data(df, geo)
     st.write( df_final )
