@@ -181,7 +181,11 @@ def main():
     st.write("Ce graphe utilise le jeu de données du dispositif national de surveillance des eaux usées (SUM’Eau)")
     st.write("Il devrait être mis à jour automatiquement à partir des données " )
     st.write( 'https://www.data.gouv.fr/fr/datasets/surveillance-du-sars-cov-2-dans-les-eaux-usees-sumeau/#/discussions')
-    
+    st.write( "version 1.1")
+    st.write( "milestone et todo :")
+    st.write ( '.  mise à jour auto à fiabiliser. ')
+    st.write ( '.  prediction temporelle')
+    st.write ( 'objectif : production au 15/10/2024 ')
     path = './'
     df = load_df(path)
     geo= load_geo (path)
