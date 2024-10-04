@@ -23,7 +23,6 @@ def load_df(path):
     df = pd.read_csv(path  + 'sumeau-indicateurs.csv',
                      sep = ';'
                      )
-    # st.write(df )
     return df
     
 def load_geo(path):
@@ -33,7 +32,6 @@ def load_geo(path):
                        'sumeau-stations.csv', 
                       sep = ';' 
                       )
-    # st.write(geo)
     return geo 
 
 def preprocess_data(df, geo):
