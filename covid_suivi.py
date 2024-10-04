@@ -177,13 +177,17 @@ def visualize_data(df_final):
     return m
 
 def main():
-    st.title("Mon application de données")
+    st.title("Suivi du Covid En France")
+    st.write("Ce graphe utilise le jeu de données du dispositif national de surveillance des eaux usées (SUM’Eau)")
+    st.write("Il devrait être mis à jour automatiquement à partir des données " )
+    st.write( 'https://www.data.gouv.fr/fr/datasets/surveillance-du-sars-cov-2-dans-les-eaux-usees-sumeau/#/discussions')
+    
     path = './'
     df = load_df(path)
     geo= load_geo (path)
     
     df_final , geo_final = preprocess_data(df, geo)
-    st.write( df_final )
+    # st.write( df_final )
     visualize_time_data(df_final )
     folium_static(visualize_data(geo_final) ) 
 
