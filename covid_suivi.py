@@ -20,7 +20,7 @@ from streamlit_folium import folium_static
 def load_df(path):
 
     # Chargement du fichier CSV
-    df = pd.read_csv(path  + 'sumeau-indicateurs-2024-10-02-18h00.csv',
+    df = pd.read_csv(path  + 'sumeau-indicateurs.csv',
                      sep = ';'
                      )
     # st.write(df )
@@ -30,7 +30,7 @@ def load_geo(path):
     # Chargement des données
 
     geo = pd.read_csv (path + 
-                       'sumeau-stations-2024-09-25-18h00.csv', 
+                       'sumeau-stations.csv', 
                       sep = ';' 
                       )
     # st.write(geo)
