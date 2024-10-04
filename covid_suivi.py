@@ -192,7 +192,9 @@ def main():
     
     df_final , geo_final = preprocess_data(df, geo)
     # st.write( df_final )
+    st.write('Evolution des mesures de concentrations dans les eaux usées')
     visualize_time_data(df_final )
+    st.write('Moyenne des 3 dernières mesures par site')
     folium_static(visualize_data(geo_final) ) 
 
 if __name__ == "__main__":
