@@ -98,7 +98,7 @@ def preprocess_data(df, geo):
 
 def visualize_time_data(df):
     # colonnes_mesures = df.iloc[:,1: ].columns.tolist() 
-    colonnes_mesures =["PARIS SEINE-CENTRE", "National", "MARSEILLE", "LYON - SAINT FONS"]
+    colonnes_mesures =["PARIS SEINE-CENTRE", "National_12", "MARSEILLE", "LYON - SAINT FONS"]
     # st.write( "df" , colonnes_mesures)
     df_display = df[colonnes_mesures]
     # Création du graphique
