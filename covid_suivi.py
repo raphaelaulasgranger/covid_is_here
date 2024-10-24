@@ -179,8 +179,9 @@ def visualize_data(df_final):
 def main():
     st.title("Suivi du Covid En France")
     st.write("Ce graphe utilise le jeu de données du dispositif national de surveillance des eaux usées (SUM’Eau)")
-    st.write("Il devrait être mis à jour automatiquement à partir des données si data.gouv travaillait sur une API" )
-    st.write ( " dernière mise à jour 2/10/24 - et oui! ")
+    st.write("Il pourrait être mis à jour automatiquement à partir des données si data.gouv travaillait sur une API" )
+    st.write ( "mise à jour 2/10/24 ")
+    st.write ( "mise à jour 24/10/24 ")
     path = './'
     df = load_df(path)
     geo= load_geo (path)
