@@ -182,6 +182,7 @@ def main():
     st.write("Il pourrait être mis à jour automatiquement à partir des données si data.gouv travaillait sur une API" )
     st.write ( "mise à jour 2/10/24 ")
     st.write ( "mise à jour 24/10/24 ")
+    st.write ( "mise à jour 31/10/24")
     path = './'
     df = load_df(path)
     geo= load_geo (path)
