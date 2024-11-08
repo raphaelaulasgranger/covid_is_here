@@ -183,6 +183,7 @@ def main():
     st.write ( "mise à jour 2/10/24 ")
     st.write ( "mise à jour 24/10/24 ")
     st.write ( "mise à jour 31/10/24")
+    st.write ( "mise à jour 07/11/24")
     path = './'
     df = load_df(path)
     geo= load_geo (path)
